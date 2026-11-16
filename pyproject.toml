@@ -1,0 +1,29 @@
+[project]
+name = "advice-bandwidth-control"
+version = "0.1.0"
+description = "Day 1-2 pilot harness for bounded untrusted advice in AI control"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+analysis = [
+  "matplotlib==3.10.8",
+]
+report = [
+  "reportlab==4.4.9",
+]
+controlarena = [
+  "control-arena==20.1.1",
+  "inspect-ai==0.3.289",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[tool.uv]
+package = false
+
